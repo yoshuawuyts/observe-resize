@@ -30,13 +30,13 @@ function observeResize (el, cb) {
   el.appendChild(frame)
 
   assert.ok(frame.contentWindow, 'observe-resize: no contentWindow detected - cannot start observing')
-  frame.contentWindow.onresize = onresize
+  frame.contentWindow.onresize = handleResize
 
   return function stopObserving () {
     el.removeChild(frame)
   }
 
-  function onresize () {
+  function handleResize () {
     if (called) return
     called = true
     window.requestAnimationFrame(function () {
