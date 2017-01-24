@@ -1,6 +1,6 @@
 {
   "name": "observe-resize",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Trigger a callback when an element is resized",
   "main": "index.js",
   "scripts": {
