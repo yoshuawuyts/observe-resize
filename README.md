@@ -55,7 +55,7 @@ $ npm install observe-resize
 [5]: https://travis-ci.org/yoshuawuyts/observe-resize
 [8]: http://img.shields.io/npm/dm/observe-resize.svg?style=flat-square
 [9]: https://npmjs.org/package/observe-resize
-[10]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
+[10]: https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square
 [11]: https://github.com/feross/standard
 
 [serd]: https://github.com/developit/simple-element-resize-detector
