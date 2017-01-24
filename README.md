@@ -1,5 +1,5 @@
 # observe-resize [![stability][0]][1]
-[![npm version][2]][3] [![build status][4]][5] [![test coverage][6]][7]
+[![npm version][2]][3] [![build status][4]][5]
 [![downloads][8]][9] [![js-standard-style][10]][11]
 
 Trigger a callback when an element is resized. Adapted from
@@ -53,8 +53,6 @@ $ npm install observe-resize
 [3]: https://npmjs.org/package/observe-resize
 [4]: https://img.shields.io/travis/yoshuawuyts/observe-resize/master.svg?style=flat-square
 [5]: https://travis-ci.org/yoshuawuyts/observe-resize
-[6]: https://img.shields.io/codecov/c/github/yoshuawuyts/observe-resize/master.svg?style=flat-square
-[7]: https://codecov.io/github/yoshuawuyts/observe-resize
 [8]: http://img.shields.io/npm/dm/observe-resize.svg?style=flat-square
 [9]: https://npmjs.org/package/observe-resize
 [10]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
