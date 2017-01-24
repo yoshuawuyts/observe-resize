@@ -9,11 +9,6 @@
     "test": "standard && npm run deps",
     "test:cov": "standard && npm run deps"
   },
-  "browserify": {
-    "transform:": [
-      "sheetify/transform"
-    ]
-  },
   "repository": "yoshuawuyts/observe-resize",
   "keywords": [
     "resize",
@@ -24,8 +19,8 @@
   "license": "MIT",
   "dependencies": {
     "bel": "^4.5.1",
-    "is-dom": "^1.0.7",
-    "sheetify": "^6.0.1"
+    "insert-css": "^2.0.0",
+    "is-dom": "^1.0.7"
   },
   "devDependencies": {
     "bankai": "^5.2.1",

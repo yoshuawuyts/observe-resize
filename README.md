@@ -3,8 +3,7 @@
 [![downloads][8]][9] [![js-standard-style][10]][11]
 
 Trigger a callback when an element is resized. Adapted from
-[simple-element-resize-detector][serd]. Relies on the `browserify.transform`
-field to be respected.
+[simple-element-resize-detector][serd].
 
 ## Usage
 ```js

@@ -1,22 +1,9 @@
+var insert = require('insert-css')
 var assert = require('assert')
 var isDom = require('is-dom')
-var css = require('sheetify')
 var html = require('bel')
 
-var prefix = css`
-  :host {
-    position: absolute;
-    left: 0;
-    top: -100%;
-    width: 100%;
-    height: 100%;
-    margin: 1px 0 0;
-    border: none;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
-`
+insert('__observe-resize__ { position: absolute; left: 0; top: -100%; width: 100%; height: 100%; margin: 1px 0 0; border: none; opacity: 0; visibility: hidden; pointer-events: none; }')
 
 module.exports = observeResize
 
@@ -26,7 +13,7 @@ function observeResize (el, cb) {
   assert.equal(typeof cb, 'function', 'observe-resize: cb should be type function')
 
   var called = false
-  var frame = html`<iframe class=${prefix}></iframe>`
+  var frame = html`<iframe class="__observe-resize__"></iframe>`
   el.appendChild(frame)
 
   assert.ok(frame.contentWindow, 'observe-resize: no contentWindow detected - cannot start observing')
