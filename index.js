@@ -3,7 +3,7 @@ var assert = require('assert')
 var isDom = require('is-dom')
 var html = require('bel')
 
-insert('__observe-resize__ { position: absolute; left: 0; top: -100%; width: 100%; height: 100%; margin: 1px 0 0; border: none; opacity: 0; visibility: hidden; pointer-events: none; }')
+insert('.__observe-resize__ { position: absolute; left: 0; top: -100%; width: 100%; height: 100%; margin: 1px 0 0; border: none; opacity: 0; visibility: hidden; pointer-events: none; }')
 
 module.exports = observeResize
 
