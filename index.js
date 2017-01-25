@@ -20,7 +20,7 @@ function observeResize (el, cb) {
   frame.contentWindow.onresize = handleResize
 
   return function stopObserving () {
-    el.removeChild(frame)
+    if (frame.parentNode) frame.parentNode.removeChild(frame)
   }
 
   function handleResize () {
