@@ -1,4 +1,4 @@
-var insert = require('insert-css')
+var insert = require('insert-styles')
 var assert = require('assert')
 var isDom = require('is-dom')
 var html = require('bel')
@@ -11,6 +11,9 @@ module.exports = observeResize
 function observeResize (el, cb) {
   assert.ok(isDom(el), 'observe-resize: el should be a valid DOM element')
   assert.equal(typeof cb, 'function', 'observe-resize: cb should be type function')
+
+  // Make this function a noop in non-browser environments
+  if (typeof window !== 'object') return
 
   var called = false
   var frame = html`<iframe class="__observe-resize__"></iframe>`

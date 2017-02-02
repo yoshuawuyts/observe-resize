@@ -19,7 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "bel": "^4.5.1",
-    "insert-css": "^2.0.0",
+    "insert-styles": "^1.2.1",
     "is-dom": "^1.0.7"
   },
   "devDependencies": {
